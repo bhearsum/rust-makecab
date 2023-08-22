@@ -12,6 +12,10 @@ clap = "2.3.0"
 error-chain = { version = "0.7.2", default-features = false }
 filetime = "0.1"
 
+[patch.crates-io]
+flate2 = { git = "https://github.com/rust-lang/flate2-rs", rev = "1.0.25" }
+once_cell = { git = "https://github.com/matklad/once_cell.git", rev = "v1.12.0" }
+
 [dev-dependencies]
 tempdir = "0.3.4"
 
